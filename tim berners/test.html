@@ -1,0 +1,80 @@
+<style>
+    .main {
+        
+    }
+    .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 500px;
+  width: 600px;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "a e e"
+    "c b b"
+    "d f f"
+    ;
+  align-content: space-between;
+  justify-content: space-around;
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: c;
+}
+
+.item3 {
+    grid-area: d;
+}
+
+.movie {
+    grid-area: e;
+}
+
+.movie1 {
+    grid-area: b;
+}
+
+.movie2 {
+    grid-area: f;
+}
+
+
+img {
+    max-width:75%;
+    height:auto;
+    padding-left: 20px;
+}
+
+</style>
+
+<html>
+    <body>
+        
+    
+    <section class="main">
+        <div class="wrapper">
+            <div class="item1"><img src="/img/alien.jpg" alt=""></div>
+            <div class="item2"><img src="/img/mister_hulot.jpg" alt=""></div>
+            <div class="item3"><img src="/img/space_odyssey.jpg" alt=""></div>
+            <div class="movie">
+                <h3 class="title">2001 - Space Odyssey</h3>
+                <p>Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.AL. 9000, sets off
+                on a quest.</p>
+            </div>
+            <div class="movie1">
+            <h3 class="title">Monsieur Hulot</h3>
+            <p>Monsieur Hulot comes to a beachside hotel for a vacation, where he accidentally (but good-naturedly) causes havoc.</p>
+            </div>
+            <div class="movie2">
+                <h3 class="title">Alien</h3>
+                <p>The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crew heads home only to
+                    realize that a deadly bioform has joined them</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #79726E;
+}
 body {
     
     font-family: 'Open Sans', sans-serif;
@@ -12,45 +17,60 @@ body {
 
 .main-title {
     color: #dd5555;
+    
 }
 
+p {
+    text-align: left;
+}
+
+.main-par {
+    padding: 15px 15px 0px 15px;
+    
+
+}
+
+
+
 .tim {
+    display: inline-block;
+    margin-top: 20px;
     border-radius: 50%;
     border:5px solid #EBEBEB;
+    max-width: 25%;
+    
 }
 
 section {
+    display: inline-block;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 620px;
     background: #fff;
     border-radius: 3px;
+    padding-bottom: 20px;
+    
 }
+
+
+.favourite-movies {
+    height: 650px;
+}
+
+
 
 .boxes {
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px 150px 50px ;
 }
 
 .box {
-    width: 100px;
+    padding-left: 20px;
 }
 
-.movie-img {
-    width: 100px;
-    height: 200px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.movie {
-    width: 290px;
-    height: 100px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-
-}
 
 button {
     border: none;
@@ -70,9 +90,56 @@ button a {
 
 }
 
-.main {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.title-mov {
+    padding-top: 20px;
+    padding-bottom: 75px;
 }
 
+.main-mov {
+    height: 700px;
+}
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 500px;
+    width: 600px;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "a e e"
+      "c b b"
+      "d f f"
+      ;
+    align-content: space-between;
+    justify-content: center;
+  }
+  .item3 {
+    grid-area: a;
+  }
+  .item2 {
+    grid-area: c;
+  }
+  
+  .item1 {
+      grid-area: d;
+  }
+  
+  .movie {
+      grid-area: e;
+  }
+  
+  .movie1 {
+      grid-area: b;
+  }
+  
+  .movie2 {
+      grid-area: f;
+  }
+  
+  
+  img {
+      max-width:60%;
+      height:auto;
+  }
+  
