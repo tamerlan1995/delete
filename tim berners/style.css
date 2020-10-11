@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+    background: #EBEBEB;
+    color: #000;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-title {
+    color: #dd5555;
+}
+
+.tim {
+    border-radius: 50%;
+    border:5px solid #EBEBEB;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.boxes {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.box {
+    width: 100px;
+}
+
+.movie-img {
+    width: 100px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.movie {
+    width: 290px;
+    height: 100px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+button {
+    border: none;
+    background-color: #dd5555;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
